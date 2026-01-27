@@ -12,6 +12,7 @@ sudo apt update
 sudo apt install jenkins
 systemctl status jenkins
 
+and after go to aws  select instance and go to security and create inbound rule and addd new rule -----cutom TCP-8080 port--source 0.0.0.0/0 and create
 
 
 
