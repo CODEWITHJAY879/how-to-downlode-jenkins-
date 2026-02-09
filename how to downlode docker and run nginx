@@ -1,0 +1,13 @@
+
+sudo -i
+  sudo apt-get update && sudo apt install docker.io -y
+
+
+mkdir -p ~/docker-nginx/html
+cd ~/docker-nginx/html
+vi index.html
+
+<<put any html code>>
+
+
+docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
