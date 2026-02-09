@@ -1,1 +1,7 @@
 docker run -it -d -p 8080:8080 jenkins/jenkins:latest
+docker ps 
+
+docker exec -it <docker id> /bin/bash
+<<put the container id>>
+cat /var/jenkins_home/secrets/initialAdminPassword
+give password and unlock the jenkins 
